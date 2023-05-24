@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 def evaluate(args, test_iter, pretrained_dir):
     # get net
-    device = f'cuda:{args.cuda}' if args.cuda > 0 and torch.cuda.is_available() else 'cpu'
+    device = f'cuda:{args.cuda}' if args.cuda >= 0 and torch.cuda.is_available() else 'cpu'
     net = CNN().to(device)
     net.load_state_dict(torch.load(pretrained_dir, map_location=device))
     

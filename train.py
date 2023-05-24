@@ -21,7 +21,7 @@ def train(args, train_iter, test_iter):
     num_epochs = args.num_epochs
 
     # get current device
-    device = torch.device(f"cuda:{args.cuda}" if args.cuda > 0 and torch.cuda.is_available() else "cpu")
+    device = torch.device(f"cuda:{args.cuda}" if args.cuda >= 0 and torch.cuda.is_available() else "cpu")
 
     # get training net
     net = CNN().to(device)
