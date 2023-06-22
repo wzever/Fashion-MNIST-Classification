@@ -1,6 +1,8 @@
 # Fashion-MNIST_Classification
 Course project (mandatory task) of SJTU CS3612: Machine Learning, 2023 spring.
 
+**Attention: Discussion & reference welcomed, but ***NO PLAGIARISM*** !!!**
+
 ### Task objective：
 You should design one neural network by yourself. Specifically, each designed neural network should contain 12-35 layers, including convolutional layers, ReLU layers, Batch Normalization layers, fully connected layers, and maxpoolinglayers.
 - You should not directly use classical neural networks (including but not limited to VGG-11/16/19, AlexNet, ResNet-18/24/32/36/44/56/102, DenseNet, GoogLeNet, and InceptionNet). Moreover,you should not design a new neural network by just adding or removing several layers from the above classical neural networks.
